@@ -46,7 +46,9 @@ It demonstrates cloud-native architecture with CI/CD pipelines, serverless compo
 ### CI/CD Pipelines
 ![Pipelines](Screenshots/pipelines.png)
 ![Release Pipeline](Screenshots/release%20pipeline.PNG)
-[![CI Pipeline](Docs/Screenshots/CI_Pipeline.png)](Docs/Screenshots/CI_Pipeline.png)
+## 📸 Azure DevOps Pipelines
+
+![Azure DevOps Pipelines Screenshot](Screenshots/CI_Pipelines_List.png)
 
 
 ### Azure Key Vault
