@@ -22,7 +22,8 @@ It demonstrates cloud-native architecture with CI/CD pipelines, serverless compo
 ---
 
 ## Architecture
-![Architecture Diagram]
+![Architecture Diagram] <img width="1536" height="1024" alt="Quickkart Architecture" src="https://github.com/user-attachments/assets/8c03e721-3519-46ce-a2d1-8077240e9892" />
+
 
 ---
 
