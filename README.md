@@ -37,4 +37,28 @@ It demonstrates cloud-native architecture with CI/CD pipelines, serverless compo
 - Application Insights for full-stack monitoring
 
 ---
+## Screenshots/
+
+---
+
+## 📸 Project Screenshots
+
+### CI/CD Pipelines
+![Pipelines](Screenshots/pipelines.png)
+![Release Pipeline](Screenshots/release%20pipeline.PNG)
+
+### Azure Key Vault
+![Azure Key Vault](Screenshots/azure-keyvault.PNG)
+
+### Deployment Slots
+![Deployment Slots](Screenshots/Deployment%20slots.png)
+
+### QuickKart Apps
+![QuickKart Backend](Screenshots/quickcart-backend.PNG)
+![QuickKart Frontend](Screenshots/quickcart-frontend.PNG)
+
+### Application Insights
+![Application Insights](Screenshots/application%20insight.PNG)
+
+---
 
