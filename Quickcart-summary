@@ -1,0 +1,110 @@
+# 🛒 QuickKart – Azure Capstone Project  
+
+### 📘 Overview  
+**QuickKart** is a full-stack e-commerce web application developed as part of my **CloudThat Azure & DevOps Capstone Project**.  
+The project demonstrates the use of **Microsoft Azure services**, **DevOps automation**, **security best practices**, and **monitoring** for real-world cloud deployment.
+
+---
+
+## 🧱 Project Architecture  
+
+| Component | Technology | Azure Service |
+|------------|-------------|---------------|
+| Frontend | Angular 13 | Azure Static Web App |
+| Backend API | .NET Core 3.1 | Azure App Service |
+| Database | SQL Server | Azure SQL Database |
+| Images | Azure Blob Storage | Blob Lifecycle Policies |
+| Login Service | Azure Function (C#) | Function App (Serverless) |
+| Monitoring | Application Insights / Azure Monitor | Alerts, Logs & Metrics |
+| Security | Azure Key Vault | Secret Management |
+| CI/CD | Azure DevOps Pipelines | Build + Release Automation |
+
+---
+
+## 📂 Project Tasks  
+
+### **Task 1 – Local Environment Setup**
+- Installed Visual Studio, .NET SDK, Node.js, Angular CLI, and Git.  
+- Cloned frontend and backend repos from Azure Repos.  
+- Tested both locally to ensure smooth API and frontend communication.  
+
+🟢 *Result:* Verified the application functionality locally before cloud deployment.  
+
+---
+
+### **Task 2 – Deploy Backend to Azure**
+- Created an **App Service Plan** and **Web App** for backend deployment.  
+- Configured **Azure SQL Database** for product, order, and user data.  
+- Integrated **Azure Blob Storage** for product images with **lifecycle management** to reduce cost.  
+- Built a **CI pipeline** in Azure DevOps to build and publish artifacts.  
+
+🟢 *Result:* Backend deployed successfully on Azure App Service.  
+
+---
+
+### **Task 3 – Continuous Deployment (Classic Release Pipeline)**
+- Built a **multi-stage Release pipeline** with **Test** and **Production** stages.  
+- Added **pre-deployment approvals** to both stages for manual confirmation before deployment.  
+- Configured a **post-deployment gate** (Azure Monitor + Application Insights) to check for failed requests before promotion.  
+- Set **manual approval (5 min timeout)** for Production deployment.  
+- Used **Azure Key Vault** + **Managed Identity** for secure DB connection strings.  
+- Deployed **Angular frontend** on **Azure Static Web App** pointing to backend APIs.  
+
+🟢 *Result:* Automated, secure CI/CD pipeline with approvals and monitoring.  
+
+---
+
+### **Task 4 – Login Functionality using Azure Function**
+- Developed a **C# Azure Function** with an **HTTP trigger** for user login.  
+- Integrated the Function endpoint with the Angular frontend.  
+- Enabled **CORS** and monitored function activity via **Application Insights**.  
+
+🟢 *Result:* Scalable, serverless login service successfully deployed.  
+
+---
+
+## 🧠 Key Learnings
+- Built CI/CD automation using **Azure DevOps**.  
+- Used **approvals and gates** for controlled deployments.  
+- Applied **Azure Key Vault** for secret management.  
+- Leveraged **Azure Monitor** and **Application Insights** for health tracking.  
+- Implemented **Blob lifecycle policies** to optimize storage cost.  
+- Created a **serverless login function** with Azure Function App.  
+
+---
+
+## 📊 End-to-End Flow  
+
+```
+Developer Commit → Azure Repos
+   ↓
+CI Pipeline → Builds & Publishes Artifact
+   ↓
+Release Pipeline
+   → Stage 1 (Test) → Deploy + Monitor Gate
+   → Stage 2 (Prod) → Manual Approval + Deploy
+   ↓
+Azure App Service (Backend)
+Azure Static Web App (Frontend)
+Azure Function App (Login)
+Azure SQL Database (Data)
+Azure Blob Storage (Images)
+Azure Key Vault (Secrets)
+Application Insights (Monitoring)
+```
+
+---
+
+## 👨‍💻 Author  
+**Md Muzaffar Qureshi**  
+Cloud & DevOps Engineer | Azure Enthusiast  
+📍 Hyderabad, India  
+💼 [LinkedIn](#) | 💻 [GitHub](#)
+
+---
+
+## 🏁 Outcome  
+The project demonstrates real-world Azure deployment with CI/CD, monitoring, Key Vault integration, and cost optimization.  
+It reflects end-to-end DevOps automation and serverless cloud architecture.
+
+
